@@ -1,0 +1,328 @@
+
+1. What we need to build a software application?
+---> Base Programming Language(eg:Java,.net, Python,Csharp)
+---> Libraries (Built based on programming languages)
+---> Business Logic(We should implement the business requirements)
+
+2. Mostly used file Extensions in IT: Xml and Json
+
+3. Repository(Repo):
+Repo contains software related files, specific libraries  in it
+Eg: it may be java file, python file  or json file
+
+4. directories:
+---> Folders and directories are one and the same
+---> Files are created with same name and placed under different directories
+Eg:- Earth: File1.java          Jupiter: File1.java         Saturn:File1.java
+            File2.java                   File2.java                File2.java
+            File3.java                   File3.java                File3.java
+
+5.IDE- Integrated Development Environment
+----> It makes developers life easy and efficient
+----> It can integrate n number of libraries to it
+----> It's going to recognize the syntax,libraries added, alert or notify the mistakes and it provides Auto suggestions if you type something
+
+5. To access java from anywhere in our computer, need to add Environment variable
+--->First identify the heartbeat of the path (.exe) file
+--->Type environment variable in search box, click on Edit the system Environment variables
+--->Click on Environment variables
+--->In System Variable window, Select path and click on Edit
+--->In the next window, Click on New and provide .exe path till bin folder(C:\Program Files\Java\jdk-11\bin)
+
+6. How to check which version of java and Git is installed in your computer?
+--->Open the command prompt and type java --version and Git --version
+
+7.How to Integrate JDK in Intellij?
+  File->Project Structure->Project-> SDK-> Click on Edit,select specified java version and then click on Ok button
+  In project, check under External libraries whether jdk is added or not
+
+8. Coding standards
+---> Class name should be same as file name
+---> Class name should starts with capital letter
+---> Methods and variables are declared with small letter first
+
+9.How to declare a variable?
+---> Variables should be declared inside the class
+---> First should be data type and then name of the variable
+
+eg1: int numberOfHours=1
+eg2: String className (Its not mandatory to assign the value for the variable)
+
+10. What will be there in the class?
+---> Class consists of Variables and methods
+
+11. Types of Variables: Instance variables, Static Variables and Local variables
+
+12. Instance or Non-Static Variables:
+---> No static keyword in-front of instance variable
+---> It should be declared inside the class and outside the method
+---> While creating an object, One copy of instance variables and instance methods are allocated to that class
+---> Instance variables can be accessible only in instance methods of that class
+---> Need to create an object to access the instance variables in static method
+---> If we update the values of an instance variables, it affects the only on the specific object
+
+
+13.Static Variables:
+---> Static keyword should be present always in front of a variable in the class
+---> simply call by using class name
+---> It can be accessible in instance and static methods of that class
+---> If we update the values of static variable once, then the updated value will be shared across the program
+
+14. Local Variables:
+---> Variables declared inside the method or within parenthesis of the method is called local variables.
+---> Local variables are accessible only to that particular method
+---> Also, we can't initialize a variable which is inside the parenthesis
+
+15. Return statement:
+--->Return keyword is used to return a value from that method
+--->and it returns the value of the data type of that method
+--->Block of code or method name will not affect the return value
+---> Void will not return anything in the method
+ eg: int add(int a, int b){
+        int c=a+b;
+        return c;
+    }
+
+ 16. CustomDataType:
+ ---> Custom datatype is of object creation
+ ---> Storing that object creation in object reference variable
+ ---> By using object reference variable name, we can call the methods of that class
+ ---> Returns the value of the data type of that class
+
+ 17.Maven:
+ ---> Maven is a build management tool
+ ---> Maven will help us to maintain dependencies
+ --->Important file in maven is pom.xml
+ ---> Maven will help us validating,compiling, testing and packaging the code
+ ---> though we click on package, it trigger previous process each time before packaging.
+
+ 18. What does each maven process do?
+ --->mvn validate -Business logic and Validated by structure of the project
+ --->mvn compile -Compile whether the code is written Syntactically correct or not
+ --->mvn test - Test the complete code before packaging
+ --->mvn package - collection of java files will be packed into a jar file.
+
+ 19. Why we need maven?
+ ---> If there is any problem with new release or many other persons are updating the same file
+ ---> then roll bak to the previous version where the updates are not available
+
+ 20. Git
+ ---> Git will help us to maintain the version control
+ ---> and each and every piece of code change will be recorded with username
+
+ 21. Git commands:
+ --->git config --list: it provides the output of git username and password
+ --->git config --global user.name "provide your username"- To update the user name
+ --->git config --global user.email "Provide your email address"- To update email address
+ --->git clone -b Gomathi_Branch git@bitbucket.org:techradarit2023/java_selenium_devops_2023.git: To clone the remote repo project into local repo
+
+ 22. What is constructors
+ --->Constructor will be executed at the time of object creation
+ --->Constructor is similar like method but constructor name should be same as class name
+ --->There are two types of constructors: 1.Default constructor and Parameterized Constructor
+ --->If there is no constructor declared in the class, java compiler will define one default constructor and execute it at the time of object creation
+
+
+22. This keyword
+---> this keyword is referred as current class object reference
+---> this keyword can be used to solve when there is a ambiguity between instance and local variable
+---> by using this keyword we can invoke one constructor into another constructor
+        For eg: default constructor can be called inside a parameterised constructor and vice versa.
+---> this keyword can also be used to call methods.
+
+
+23. Inheritance
+---> Extends keyword helps us to create relation between parent and child classes
+---> once link is provided, child can acquire the properties of parent class
+---> There 4 types of inheritance
+        Single level inheritance: Child class inherits the properties of parent class
+           eg: Class B extends Class A
+        Multi level inheritance: Parent class extends in some other class
+           eg: Class Me extends Class Parents
+               Class Parents extends Class GrandParents
+               Class Grandparents extends Class GreatGrandParents
+        Hierarchical inheritance: Parent class extends to multi child class
+           eg: Class Son extends Class  Parents
+             Class daughter extends Class  Parents
+        Multiple inheritance: It is not supported in java. Due to ambiguity of same method name in both parent class
+
+        eg: Class Father, Class Mother
+            Class son extends Father or Mother
+
+   24.Polymorphism:
+    ---> If some action occurs in many or different ways then its called polymorphism
+
+    There are two types of polymorphism
+    1. Compile time polymorphism
+    2. Run time polymorphism
+
+    Method OverLoading:
+    ---> If a class has same method name with different parameters is called method overloading
+    Method Over riding:
+    ---> If parent and child class has same method name, same type of parameters but logic is different then its called method over riding
+    ---> overriding takes place when inheritance comes into pic
+
+    Compile time polymorphism:
+       ---> In Overloading it never updates the value during the compile-time polymorphism.
+    Run time polymorphism:
+        --->Using overriding concept we can achieve the run-time polymorphism.
+            It changes the behavior at run time.
+
+   25.Type Casting:
+   ---> Converting one datatype value into another datatype value is called typecasting.
+   ---> Type casting in custom datatype will occur only when inheritance concept takes place
+   ---> From parent class to child class,(Lower to Higher).
+         Parent Class obj = new Child class
+
+   26. Upcasting:(Higher to lower)
+   ---> Storing Child class object in parent class reference variable
+   ---> eg:Child class obj = (Child class) new Parent class
+
+   27. Final Keyword:
+   --->If we keep final key word in front of the class then the class can't be extend to any child class
+   --->If we keep final key word in front of the method then the method can't be overridden
+   --->If we keep final key word in front of the variable then the variable value can't be changed at any cost
+
+   28. Abstract:
+   Abstraction means hiding the implementation and showing the functionality
+
+   abstraction in java can be achieved in two ways
+       •  one with Abstract class
+   	•  another with Interface
+
+   We can achieve 0 to 100% abstraction using abstract class
+
+   We can achieve 100% abstraction using Interface
+
+   Abstract class:
+   ---> Abstract class can contains both abstract & non abstract methods
+   ---> Abstract class cant be instantiated
+
+   Interface:
+   ---> Interface contains only abstract methods
+   ---> Interface cannot instantiated
+   ---> Implementation of abstract methods will happen in child class.
+
+   29. Why Interfaces supports multiple inheritance in java?
+   ---> Multiple interface is supported in java because
+   ---> Implementation is happening only in child class
+
+   30.Access modifier:
+   ---> Specifies the accessibility or scope of a field, method or class
+   ---> We can change the access level of fields,methods, and class by applying the access modifier on it.
+      There are four types of access modifiers in java
+      • public - can be accessed in everywhere (ie) Within class,Outside the class,Within Package and outside package
+      • private- can be accessed only Within class, with method name it can be called Outside the class
+      • default- can be accessed in Within class,Outside the class and WithinPackage, cannot access outside package
+      • protected- can be accessed in Within class,Outside the class and WithinPackage
+                   protected members are accessible outside the package with child class object by extending its parents class
+
+   31. Encapsulation
+   ---> Encapsulation is the process of wrapping up the code with private data members.
+   ---> We can control the initialization of private data members with setter method,
+   ---> we can access the private data members with getter methods.
+
+   32. What does selenium do?
+      --->Selenium does automates the browsers. That's it!
+      --->Handling driver is the most important in selenium
+
+      33. Ways to find the xpath
+      --->Finding xpath using attribute://tagname[@attribute="value"]
+      --->Finding xpath using text()://tagname[text()="value"]
+      --->Navigating from parent to child tag://div[@name="parent tag"]/childtagname[@attribute="value"]
+      --->Navigating to younger sibling://div[@attribute="value"]/following-sibling::tagname[];
+      --->Navigating to elder sibling://div[@attribute="value"]/preceding-sibling::tagname[];
+      ---> applying Contains method://a[contains(text(),'letters in a word or words in long string'];
+                    or eg://a[contains(.,'Forgot');
+
+      34-TestNG
+      ---> TestNG will help us to group our test cases and execute it at one go
+      ---> Generating report for test cases with passed, failed, skipped and total run
+      ---> We can even skip the failed test cases and do remaining test case execution
+
+      35. How can we write multiple test cases in TestNG?
+      --->We have annotation called @Test in TestNG
+      --->Method written under this annotation will be considered as one test case
+      --->Method name will be considered as test case name
+
+      36. How do you validate actual and expected results in TestNG?
+      ---> Using assertion
+      ---> Assertion means comparing two values
+
+      37.Popular frameworks are -TestNG and Junit
+      --->Cucumber and serenity is also available in the market
+
+      38. What is surefire plug in file?
+      ---> Maven surefire plugin of maven help you to run all  the test cases from test folder
+      ---> By default, the Surefire Plugin will automatically include all test classes with the following wildcard patterns:
+
+      "**/Test*.java" - includes all of its subdirectories and all Java filenames that start with "Test".
+      "**/*Test.java" - includes all of its subdirectories and all Java filenames that end with "Test".
+      "**/*Tests.java" - includes all of its subdirectories and all Java filenames that end with "Tests".
+      "**/*TestCase.java" - includes all of its subdirectories and all Java filenames that end with "TestCase".
+      ---> It is an inbuilt file when maven is installed
+      ---> this plug in does generate report with Total no.of testcases, failure, Error and skipped
+
+      39. what is the command to run a specific testcases from cmd prompt?
+      ---> mvn test -Dtest="Test suite1"
+      ---> mvn test -Dtest="Test suite1","Test suite2";- will Execute specified test suites
+
+      40. @Before method- Method under this particular annotation, will execute before each test cases
+      41. @After method- Method under this particular annotation, going to execute after each test cases
+      42. @Teardown() - It will close the browser irrespective of test case is pass or fail
+
+      43. How to execute specific test cases from TestNG?
+      ---> It has @Test annotations, we need to click on the play button beside @Test
+       Testng.xml
+       Here we can configure our execution as we like
+       -->We can configure to trigger only specific test cases on specific test suite
+       -->We can also include n number of test suite to be run
+       -->We can also exclude some of the test cases in specific test suit
+
+       44. What is priority in testng?
+       ---> We have a attribute called Priority in TestNG, this attribute will be applied to the test annotation method
+       ---> with the help of that ordering of test cases can be maintained.
+
+       45. what is grouping in testng?
+       ---> Using groups attribute in testng,testcases can be grouped
+       ---> this attribute will be applied to the test annotation method
+       ---> we can include or exclude the groups by configuring it in our testng.xml
+
+      46. what is parameterization?
+      ---> We can maintain the parameters in testng.xml
+      ---> By using attribute @parameters,to pass data from Testng.xml to the test suite class
+      ---> We have to add parameters annotations before our test case(method with arguments )with the required parameters to execute the tests .
+           Also, the correct parameters should be given in the testng.xml inside the tags
+
+      47. What is property concept?
+      ---> Maintain the configuration of the browser and credentials in the property file.
+      ---> In File input stream class, load the file giving the path of the property file
+      ---> and then load the file into property class
+     ---> According to our requirements, we have to use the required configuration
+
+                                       JENKINS
+         . Jenkins is a CI/CD tool to run automated files.
+         . CI - Continuous Integration.
+         . CD - Continuous Development.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

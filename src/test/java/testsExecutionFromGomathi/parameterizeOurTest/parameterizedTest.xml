@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Hybrid/java_selenium_devops_2023">
+        <parameter name="email" value="Gomathi.Balasubramanianmvs@gmail.com"></parameter>
+        <parameter name="browser" value="firefox"></parameter>
+        <parameter name="applicationURL" value="https://www.freecrm.com"></parameter>
+        <parameter name="password" value="Iniyal@2511"></parameter>
+        <classes>
+            <class name="testCasesFromGomathi.parameterizedTest">
+            </class>
+
+        </classes>
+    </test>
+</suite>
