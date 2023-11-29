@@ -1,0 +1,32 @@
+How we can connect with Agents/Nodes from jenkins server?
+
+Solution:
+
+It's very easy to configure as Jenkins provide nice library to connect with agents or nodes or VMs easily.
+
+Step 1: Go to manage jenkins > nodes and clouds
+
+Step 2: Create a new node & provide the name of the node(better to keep your slave hostname) and select permanent agent.
+
+Step 3: Give a sweet name to that agent in the field "labels"
+
+Step 4: Give the default location in the field "remote root directory" to run the commands received from jenkins master.
+
+Step 5: Select the launch method as "Launch agent by connecting it to the controller"
+
+Step 6: click on save, after that you will see the agent is created with in dead mode.
+
+Step 7: click on the agent then you will see all the connection details.
+
+
+Important note:
+
+If you don't see the agent connection options via java commands in agent details screen , then perform below steps:
+
+Step 1: Go to Manage Jenkins > Security
+Step 2: You will the see the section called Agent, please select the option "Random" under the "TCP port for inbound agents"
+
+
+
+
+

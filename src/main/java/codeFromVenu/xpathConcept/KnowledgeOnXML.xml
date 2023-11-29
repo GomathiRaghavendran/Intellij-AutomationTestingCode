@@ -1,0 +1,34 @@
+<Squads>
+    <Team name = "ringgIT" sizeOfTeam = "7">
+        <member name = "Haritha"  currentlocation = "Evere" >Test Engineer</member>
+        <member name = "Priyanka S"  currentlocation = "Zaventam" >Functional Engineer</member>
+        <member name = "Bhavita"  currentlocation = "Evere" >
+            <childMember> schooling </childMember>
+            Devops Engineer</member>
+    </Team>
+
+    <Team name = "forInt" sizeOfTeam = "6">
+        <member name = "Elizabeth"  currentlocation = "Evere" >Test Automation Engineer</member>
+        <member name = "Padma"  currentlocation = "Tervuren" >Functional Engineer</member>
+        <member name = "Madhu"  currentlocation = "Schuman" >Functional Engineer</member>
+    </Team>
+
+    <Team name = "Franc" sizeOfTeam = "7">
+        <member name = "Sia"  currentlocation = "Leuven" >Test Automation Engineer</member>
+        <member name = "Kavitha"  currentlocation = "Leuven" >Functional Engineer</member>
+        <member name = "Thenmozhi"  currentlocation = "Aalst" >Functional Engineer</member>
+    </Team>
+
+    <Team name = "Rubble" sizeOfTeam = "7">
+        <member name = "Manisha"  currentlocation = "Evere" >Test Automation Engineer</member>
+        <member name = "Anusha"  currentlocation = "Coteaux" >Functional Engineer</member>
+        <member name = "Priya"  currentlocation = "Evere" >Functional Engineer</member>
+    </Team>
+
+    <Team  name = "Mexicon Peso" sizeOfTeam = "6">
+        <member name = "Shilpa"  currentlocation = "Etterbeek" >Test Automation Engineer</member>
+        <member name = "Ankita"  currentlocation = "Etterbeek" >Functional Engineer</member>
+        <member name = "Elipse"  currentlocation = "Rogier" >Functional Engineer</member>
+    </Team>
+
+</Squads>

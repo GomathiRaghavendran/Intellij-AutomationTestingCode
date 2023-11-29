@@ -1,0 +1,69 @@
+The Surefire Plugin will help us to run the test which was written under the test folder of maven project
+
+By default, the Surefire Plugin will automatically include all test classes with the following wildcard patterns:
+
+"**/Test*.java" - includes all of its subdirectories and all Java filenames that start with "Test".
+"**/*Test.java" - includes all of its subdirectories and all Java filenames that end with "Test".
+"**/*Tests.java" - includes all of its subdirectories and all Java filenames that end with "Tests".
+"**/*TestCase.java" - includes all of its subdirectories and all Java filenames that end with "TestCase".
+
+
+Challenge with maven test command:
+
+===================================
+
+I want to run only test suite under the test folder inside mvn project
+
+Solution:
+
+Madam!!!! we have a fantastic solution for it, just use below command:
+
+mvn test -Dtest=testSuiteName
+
+mvn test -Dtest=testSuite1Name,testSuiteName
+
+
+====================================
+
+I want to run the default testNG.xml & also custom testNG.xml from mvn test command.
+
+
+Solution:
+
+Madam!!!! We have a super duper solution for you as your are super women.
+
+Firstly, you need to configure the surefire plug to run the default testng.xml available in repository source file in the pom.xml.
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.1.2</version>
+                <configuration>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>testng.xml</suiteXmlFile>
+                    </suiteXmlFiles>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+
+ Second:
+
+ Now you run "mvn test" command in the command prompt, it will run the default testng.xml located in repository source.
+
+ very importantly - if you want to run your customized testng.xml located in different location then use below command
+
+ mvn test -Dsurefire.suiteXmlFiles="pathOftheTestNG.xmlFromRepositorySource"
+
+ "ABOVE COMMAND IS VERY VERY SENSITIVE"
+
+
+ mvn test -Dbrowser="ff"
+
+
+
+

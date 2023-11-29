@@ -1,0 +1,15 @@
+Variables:
+
+Instance variables:
+	• If you don't keep static in front of a variables in the class that is going to be consider as instance variable.
+	• Whenever you create an object for a class then one copy of instance variables and instance methods declared in that class.
+	• If we the update value of instance variable of one particular object then updated value will not reflect the instance variable value belongs to other objects/instances of the class.
+	• Instance variables can be accessible only in instance methods of that class.
+	• If you want to access instance variables in static method in same class we need to create an object and access them
+
+
+Static Variables:
+	• If you keep static in front of a variable in the class that is going to be consider as static variable.
+	• We no need to create an object to call static variable, we can simply call by using class name.
+	• If we update the value of static variable once then the updated value will be shared across the rest of the program.
+	• Static variables can be accessible in instance and static methods of that class.

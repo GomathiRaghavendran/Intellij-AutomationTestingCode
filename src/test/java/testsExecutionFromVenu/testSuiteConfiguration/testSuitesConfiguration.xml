@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <listeners>
+        <listener class-name="codeFromVenu.seleniumConcept.Listeners.TellingLies"></listener>
+    </listeners>
+    <test name="C:/Hybrid_May/java_selenium_devops_2023" parallel="" thread-count="">
+        <groups>
+            <run>
+                <include name="positiveCase"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="testCasesFromVenu.LoginFunctionalityTest"></class>
+
+        </classes>
+    </test>
+</suite>

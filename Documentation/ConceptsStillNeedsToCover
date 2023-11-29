@@ -1,0 +1,48 @@
+Java:
+
+Exception Handling - Finally, throws, throw - Done
+Famous programs - Fibonacci series, reverse string, find the number of letters in the string.
+Collections - not sure.
+
+
+Selenium:
+How to take screenshot? - Done
+How to do scroll-down in Selenium? - Done
+Keyboards/Mouse actions - partially completed
+Explicit Wait, fluent Wait -  partially completed
+Windows, iframes, popup handling -
+Indexing of Xpath - Done
+
+
+Framework design:
+
+Collection the evidences of the tests - Done
+Plug-in xray id to the testNG tests
+Add all the modules testdata in one excel & place it in framework - done
+
+
+TestNG:
+@DataProvider
+Parallel test execution - still we need to discuss
+
+Jenkins:
+Pipeline coding - done
+
+
+Final Pending items:
+Super keyword
+Windows, iframes, popup handling
+Fluent wait
+Pyramid Programs(let's see in Q&As session)
+@DataProvider
+Parallel test execution - still we need to discuss
+
+
+
+
+
+
+
+
+
+

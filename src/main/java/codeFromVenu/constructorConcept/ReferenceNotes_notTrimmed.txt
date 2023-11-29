@@ -1,0 +1,15 @@
+What is this constructor?
+
+It is similar like a method but constructor name should be same as class name.
+
+There are two type of constructor
+
+		○    Default constructor
+		○    Parameterized constructor
+
+Even though if you don't declare any constructor,  your java compiler will define one default constructor & execute it at the time of object creation.
+
+
+When this constructor will get execution?
+
+It will execute at the time of object creation

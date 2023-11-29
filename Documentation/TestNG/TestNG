@@ -1,0 +1,39 @@
+TestNG.xml is just an XML file where we define the configuration of our test execution.
+
+If you want to create this TestNG.xml, you can create manually & and configure it to understand by TestNG framework.
+
+else
+
+you can create with the help of Create TestNG.xml plugin which is available in Intellij plug-in manager.
+
+once install the plug-in in Intellij then automatically you will get the option to create TestNG.xml whenever or wherever you do right click.
+
+After TestNG.xml file creation you will see the file with all the classes & methods included in unformatted look,
+ if you want to format it just use short cut (ctrl + alt + l) them you will see the xml file with proper format.
+
+
+=============================================================
+TestNG.xml
+
+Here you can configure your execution as you like below:
+
+	•    you can configure your XML to trigger only specific test cases in specific test suite.
+	•    You can exclude some of the test cases in specific test suites.
+	•    You can also include n number of test suites
+
+
+
+
+Listeners
+
+Parameters
+
+TestNG.xml
+
+Grouping
+
+Pr
+
+
+
+

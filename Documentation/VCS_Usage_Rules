@@ -1,0 +1,66 @@
+Rule on Master Branch:
+
+	• Venu is going to commit & push all the code from sessions to master branch.
+	• Other than Venu, nobody is allowed commit and push the code to master branch.
+
+If anyone above rule by mistake or intentionally.
+
+	•   The person who broke the rule should inform immediately in our main Watsapp group.
+	•   The rest of people should not create any pull request from master branch once issue got reported it Watsapp group.
+	•   Venu is going to revert the commits which pushed to master branch by mistake,
+                     so that master branch will become back to normal with only the code from Venu.
+
+
+
+Personal branch:
+
+	•  All the people should have one personal branch from the master branch as a base,
+	        and they should the naming standard of the branch like Firstname_Branch
+
+   All the people here other than Venu should clone only personal branch code with below git clone  command
+
+           git clone -b Firstname_Branch git@bitbucket.org:techradarit2023/java_selenium_devops_2023.git
+
+Pull Request to personal branch from master(in Bitbucket)
+
+Be careful with source and destination while creating a pull request, if did a wrong PR & merge your personal branch code to master
+    you have to follow the steps defined in master branch rule broke section above
+
+ Everyday once session is done, usually Venu will commit & push all the code to master branch.
+ after than you need create a PR(pull request) to your personal branch from master branch & merge it.
+
+	• In this process you might face issues with merge operation if you create some mess in the files from the package called "codeFromVenu" in your personal branch.
+	• To unblock the issue with merge in Bitbitbucket, you just need to clone the repo of master somewhere in your computer & copy the package called "codeFromVenu" in your personal branch local repository manually and commit it & push again to your remote personal branch.
+
+ Create one package called "CodeFromFirstName" in your personal local repo & do all the practise in the package only and commit all your practise code
+ and push it personal remote branch always.
+
+If you're facing any issues with practise code push, you have report it to Venu in Watsapp and sort it out with Venu on the same day in the end of session.
+
+
+Common rules:
+
+	• No short-cuts or easy ways until Venu teach about it.
+	• No involvements of spouses or IT friends.
+	• Always take back up your local repo if you know something was not committed & pushed to remote
+	while you are cloning remote repository.
+
+
+Day to Day activities:
+
+   Create a PR from master to personal branch and merge it
+   Clone the personal branch in your computer with below command
+       git clone -b Firstname_Branch git@bitbucket.org:techradarit2023/java_selenium_devops_2023.git
+  Once you're are done with the practise you need to commit & push regularly.
+
+
+
+
+
+
+
+
+
+
+
+
