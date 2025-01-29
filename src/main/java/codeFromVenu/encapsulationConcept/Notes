@@ -1,3 +1,0 @@
-Encapsulation is the process of wrapping up the code with private data members.
-
-We can control the initialization of private data members with setter method, similarly we can access the private data members with getter methods.
