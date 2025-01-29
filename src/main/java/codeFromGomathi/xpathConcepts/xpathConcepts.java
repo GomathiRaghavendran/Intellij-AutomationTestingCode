@@ -24,8 +24,5 @@ public class xpathConcepts {
         d.findElement(By.xpath("//div[@class='ui message']/a[contains(., 'Forgot')]")).click();
         //Xpath to check company name is displayed or not
         d.findElement(By.xpath("//div[@class='header item']/following-sibling::b")).isDisplayed();
-
-
-
     }
 }
